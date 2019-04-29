@@ -1,0 +1,15 @@
+.idea
+.classpath
+.bak
+.project
+.settings/
+*.html
+bin/
+*.log
+**/logs/
+*.iml
+deby.log
+**/test-output/
+**/target/
+**/testmdb1/
+**/resources/ExtentReports/

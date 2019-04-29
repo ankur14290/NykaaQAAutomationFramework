@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+		<property name="hibernate.connection.url">jdbc:derby:testmdb1;create=true</property>
+		<property name="hibernate.connection.username">test</property>
+		<property name="hibernate.connection.password">test</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+		<mapping class="DataNykaa.AccountData"></mapping>
+		<mapping class="DataNykaa.CheckoutData"></mapping>
+		<mapping class="DataNykaa.Header_FooterBarData"></mapping>
+		<mapping class="DataNykaa.ProductDetailData"></mapping>
+		<mapping class="DataNykaa.AnalyticsData"></mapping>
+		<mapping class="DataNykaa.APIData"></mapping>
+		<mapping class="DataNykaa.EnvironmentParameterData"></mapping>
+		<mapping class="DataNykaa.NykaaNetworkData"></mapping>
+		<mapping class="DataNykaa.BeautyServiceData"></mapping>
+		<!--<mapping class="DataNykaaApp.AccountData"></mapping>-->
+		<!--<mapping class="DataNykaaApp.CheckoutData"></mapping> -->
+		<mapping class="DataNykaa.Header_FooterBarDataApp"></mapping>
+		<!--<mapping class="DataNykaaApp.ProductDetailData"></mapping>-->
+		<mapping class="DataNykaa.AnalyticsDataApp"></mapping>
+		<!--<mapping class="DataNykaaApp.EnvironmentParameterData"></mapping> -->
+		<mapping class="DataNykaa.ObjectRepository"></mapping>
+
+	</session-factory>
+</hibernate-configuration>
